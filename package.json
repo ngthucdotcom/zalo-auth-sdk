@@ -1,0 +1,29 @@
+{
+  "name": "sign-in-with-popup-flow",
+  "version": "1.0.0",
+  "description": "Learn the login flow using the popup",
+  "main": "''",
+  "scripts": {
+    "install-server": "cd server && npm install",
+    "start-server": "cd server && npm start",
+    "install-client": "cd client && npm install",
+    "start-client": "cd client && npm run serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngthuc/sign-in-popup-flow.git"
+  },
+  "keywords": [
+    "Sign",
+    "in",
+    "with",
+    "popup"
+  ],
+  "author": "luctc.developer1902@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ngthuc/sign-in-popup-flow/issues"
+  },
+  "homepage": "https://github.com/ngthuc/sign-in-popup-flow#readme"
+}

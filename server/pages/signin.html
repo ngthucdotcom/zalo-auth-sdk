@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login to Azure AD</title>
+</head>
+<body>
+    <h1>Login to Azure AD</h1>
+    <form action="/login" method="post">
+        <p>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username">
+        </p>
+        <p>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </p>
+        <span>
+            <input type="hidden" name="client_id">
+            <input type="hidden" name="redirect_uri">
+        </span>
+        <p>
+            <button type="submit">Sign in</button>
+        </p>
+    </form>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const clientId = params.get('client_id');
+        const redirectUri = params.get('redirect_uri');
+		
+		const inputClientId = document.querySelector('[name="client_id"]');
+		const inputRedirectUri = document.querySelector('[name="redirect_uri"]');
+
+		if (inputClientId && clientId) {
+			inputClientId.value = clientId;
+		}
+
+		if (inputRedirectUri && redirectUri) {
+			inputRedirectUri.value = redirectUri;
+		}
+    </script>
+</body>
+</html>
