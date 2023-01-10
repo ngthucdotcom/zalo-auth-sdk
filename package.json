@@ -1,18 +1,15 @@
 {
-  "name": "sign-in-with-popup-flow",
+  "name": "zalo-auth-sdk",
   "version": "1.0.0",
-  "description": "Learn the login flow using the popup",
-  "main": "''",
+  "description": "Standalone Zalo Authentication SDK using sign in with popup flow",
   "scripts": {
-    "install-server": "cd server && npm install",
-    "start-server": "cd server && npm start",
-    "install-client": "cd client && npm install",
-    "start-client": "cd client && npm run serve",
+    "install": "cd client && npm install",
+    "start": "cd client && npm run serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ngthuc/sign-in-popup-flow.git"
+    "url": "git+https://github.com/ngthucdotcom/zalo-auth-sdk.git"
   },
   "keywords": [
     "Sign",
@@ -20,10 +17,10 @@
     "with",
     "popup"
   ],
-  "author": "luctc.developer1902@gmail.com",
+  "author": "Nguyen Thuc (contact@ngthuc.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ngthuc/sign-in-popup-flow/issues"
+    "url": "https://github.com/ngthucdotcom/zalo-auth-sdk/issues"
   },
-  "homepage": "https://github.com/ngthuc/sign-in-popup-flow#readme"
+  "homepage": "https://github.com/ngthucdotcom/zalo-auth-sdk#readme"
 }
