@@ -2,10 +2,20 @@
   "name": "zalo-auth-sdk",
   "version": "1.0.0",
   "description": "Standalone Zalo Authentication SDK using sign in with popup flow",
+  "main": "main.js",
   "scripts": {
-    "install": "cd client && npm install",
-    "start": "cd client && npm run serve",
+    "pregulp": "npm i -g gulp gulp-cli",
+    "start": "gulp serve",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.27.11",
+    "gulp": "^4.0.2",
+    "gulp4-run-sequence": "^1.0.1",
+    "pkce-challenge": "^3.0.0"
+  },
+  "devDependencies": {
+    "gulp-cli": "^2.3.0"
   },
   "repository": {
     "type": "git",
