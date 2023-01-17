@@ -1,13 +1,12 @@
 const clientId = '3850903547114980520';
 const redirectUri = `${window.location.protocol}//${window.location.host}`;
-const profileScopes = [ZALO_AUTH_SCOPES.USER_ID_BY_APP, ZALO_AUTH_SCOPES.DISPLAY_NAME, ZALO_AUTH_SCOPES.LARGE_PICTURE];
 
 function handleLogin() {
 	showLoading();
 	const refreshToken = sessionStorage.getItem('zalo_refresh_token');
 	if (!refreshToken) {
-		zaloAuth
-			.login({clientId, redirectUri, scopes: profileScopes, popupTimeOut: 15000})
+		ZaloAuth
+			.login({clientId, redirectUri})
 			.then((res) => {
 				console.log('Login response: ', res);
 				sessionStorage.setItem('zalo_access_token', res.accessToken);
@@ -34,8 +33,8 @@ function handleLogin() {
 
 function handleRefreshSession() {
 	const refreshToken = sessionStorage.getItem('zalo_refresh_token');
-	zaloAuth
-		.refreshSession({clientId, refreshToken, scopes: profileScopes})
+	ZaloAuth
+		.refreshSession({clientId, refreshToken})
 		.then((res) => {
 			console.log('Refresh session response: ', res);
 			sessionStorage.setItem('zalo_access_token', res.accessToken);

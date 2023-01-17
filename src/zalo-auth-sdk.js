@@ -1,11 +1,11 @@
-const ZALO_AUTH_SCOPES = {
-	USER_ID_BY_APP: 'id',
-	DISPLAY_NAME: 'name',
-	SMALL_PICTURE: 'picture.type(small)',
-	NORMAL_PICTURE: 'picture.type(normal)',
-	LARGE_PICTURE: 'picture.type(large)',
-}
-const zaloAuth = (() => {
+// const ZALO_AUTH_SCOPES = {
+// 	USER_ID_BY_APP: 'id',
+// 	DISPLAY_NAME: 'name',
+// 	SMALL_PICTURE: 'picture.type(small)',
+// 	NORMAL_PICTURE: 'picture.type(normal)',
+// 	LARGE_PICTURE: 'picture.type(large)',
+// }
+const ZaloAuth = (() => {
 	const host = 'https://oauth.zaloapp.com/v4';
 	const POPUP_WIDTH = 480;
 	const POPUP_HEIGHT = 600;
@@ -266,4 +266,4 @@ const zaloAuth = (() => {
 			});
 		}
 	}
-})()
+})();
