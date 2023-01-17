@@ -1,5 +1,5 @@
 const clientId = '3850903547114980520';
-const redirectUri = `${window.location.protocol}//${window.location.host}`;
+const redirectUri = `${window.location.href}`;
 
 function handleLogin() {
 	showLoading();
